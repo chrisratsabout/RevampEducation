@@ -30,6 +30,7 @@
             background-color: rgb(212, 241, 253);
             height: 100vh;
             text-align: center;
+            min-height: 100vh;
         }
 
         html {
@@ -91,6 +92,11 @@
         }
 
         /*footer*/
+        .footer-container {
+
+           position: sticky;
+           top: 100%;
+        }
         .footer-icon {
             width: 20px;
             height: 20px;
@@ -165,12 +171,15 @@
                 </div>
 
             </div>
-            <p class="footer-text">Copyright &#169; <span class="year">2002</span> | Miguel Sanz Jiménez</p>
-            <img class="footer-icon" src="favicon.ico" alt="icon">
+
+
         </div>
 
     </section>
-
+    <div class="footer-container">
+        <p class="footer-text">Copyright &#169; <span class="year">2002</span> | Miguel Sanz Jiménez</p>
+        <img class="footer-icon" src="favicon.ico" alt="icon">
+    </div>
     <script>
         const year = document.querySelector('.year');
         const currentYear = new Date().getFullYear();
