@@ -42,10 +42,35 @@
 
         .uni {
             width: 200px;
-            border-radius: 20%;
-            background-color: white;
             padding: 15px;
             margin: 10px;
+        }
+
+        .uni-card-complu, .uni-card-queens, .uni-card-loyola, .uni-card-udima {
+            width: 200px;
+            height: 200px;
+            box-shadow: 5px 5px 30px rgba(0,0,0,0.3);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            margin: 15px;
+
+        }
+
+        .uni-complu:hover {
+            background-image: url("3d-complutense-2.png");
+        }
+
+        .uni-queens:hover {
+            background-image: url("3d-queens-2.png");
+        }
+
+        .uni-loyola:hover {
+            background-image: url("3d-loyola-2.png");   
+        }
+
+        .uni-udima:hover {
+            background-image: url("3d-udima-2.png");   
         }
 
         .education-container {
@@ -55,6 +80,13 @@
         }
 
         .education-block {
+            
+            flex-wrap: wrap;
+        }
+
+        .education_block {
+            display: flex;
+            justify-content: center;
             flex-wrap: wrap;
         }
 
@@ -115,13 +147,23 @@
             <br>
             <br>
             <br>
-<br>
+            <br>
             <h1>Education</h1>
+            <p>Dr. Sanz Jiménez has attended the following universities. Click on the logo of the school for more info.</p>
             <div class="education_block">
-                <img class="uni" src="complutense.png" alt="complutense">
-                <img class="uni" src="queens.png" alt="queens">
-                <img class="uni" src="loyola.jpeg" alt="loyola">
-                <img class="uni" src="udima.jpeg" alt="udima">
+                <div class="uni-card-complu">
+                    <a href="https://www.ucm.es/" target="_blank"><img class="uni-complu" src="complutense-2.png" alt="complutense"></a>
+                </div>
+                <div class="uni-card-queens">
+                    <a href="https://www.qub.ac.uk/" target="_blank"><img class="uni-queens" src="queens-2.png" alt="queens"></a>
+                </div>
+                <div class="uni-card-loyola">
+                    <a href="https://www.luc.edu/" target="_blank"><img class="uni-loyola" src="loyola-2.png" alt="loyola"></a>
+                </div>
+                <div class="uni-card-udima">
+                    <a href="https://www.udima.es/" target="_blank"><img class="uni-udima" src="udima-2.png" alt="udima"></a>
+                </div>
+
             </div>
             <p class="footer-text">Copyright &#169; <span class="year">2002</span> | Miguel Sanz Jiménez</p>
             <img class="footer-icon" src="favicon.ico" alt="icon">
